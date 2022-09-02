@@ -1,6 +1,6 @@
-print("Information Semiotics, v1 ")
+#Information Semiotics
 
-class sign_relation:
+class triadic_sign_relation:
     def __init__(self, string_obect, corres, translatant):
         self.string_obect = string_obect
         self.corres = corres
@@ -8,6 +8,14 @@ class sign_relation:
 
     def printObect(self):
         print(self.string_obect)
+
+class dyadic_sign_relation:
+    def __init__(self, string_object, corres):
+        self.string_object = string_object
+        self.corres = corres
+
+    def printObject(self):
+        print(self.string_object)
 
 #sign1 = sign_relation("9900009", "is next to", "092429")
 #sign1.printObect()
@@ -20,6 +28,8 @@ class stochastic_sign:
         self.meaning = meaning
         self.prob = prob
 
+def semic_density(s):
+    return len(s)
 
 stringsub = {
     "1": "100",
